@@ -2,10 +2,12 @@ package introduction.springintroduction.service;
 
 import introduction.springintroduction.domain.Member;
 import introduction.springintroduction.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
